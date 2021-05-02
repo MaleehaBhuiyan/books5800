@@ -1,6 +1,4 @@
 
-
-
 /* INDEX PAGE CSS */
 
 
@@ -87,6 +85,19 @@ img {vertical-align: middle;} */
 #about-us{
     background-color: aliceblue;
     width: 100%;
+    clear:left;
 }
 
+
+
+
+#f1{
+    float:left;
+}
+#f2{
+    float:left;
+}
+#f3{
+    float:left;
+}
 
