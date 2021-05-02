@@ -112,3 +112,19 @@ nav {
     top:0px;
     z-index: 1;
 }
+
+
+.flex-container {
+    display: flex;
+    text-align: center;
+}
+
+.flex-child {
+    flex: 1;
+    padding: 20px;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
+
