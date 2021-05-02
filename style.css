@@ -107,3 +107,8 @@ img {vertical-align: middle;} */
     padding:1em;
 }
 
+nav {
+    position:fixed;
+    top:0px;
+    z-index: 1;
+}
