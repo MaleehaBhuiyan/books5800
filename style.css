@@ -9,21 +9,12 @@
     width: 100%;
 }
 
-=======
->>>>>>> Stashed changes
 #f1{
     float:left;
 }
 #f2{
-<<<<<<< Updated upstream
     float:left;
 }
 #f3{
     float:left;
-=======
-    clear:left;
-}
-#f3{
-    clear:left;
->>>>>>> Stashed changes
 }
