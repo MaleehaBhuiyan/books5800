@@ -101,3 +101,8 @@ img {vertical-align: middle;} */
     float:left;
 }
 
+nav {
+    position:fixed;
+    top:0px;
+    z-index: 1;
+}
