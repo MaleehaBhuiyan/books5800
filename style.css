@@ -90,14 +90,20 @@ img {vertical-align: middle;} */
 
 
 
+.card-img-top{
+    height: 20em;
+}
 
 #f1{
     float:left;
+    padding:1em;
 }
 #f2{
     float:left;
+    padding:1em;
 }
 #f3{
     float:left;
+    padding:1em;
 }
 
