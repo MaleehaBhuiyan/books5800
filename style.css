@@ -112,3 +112,7 @@ nav {
     top:0px;
     z-index: 1;
 }
+footer {
+    
+    bottom: 0px;
+}
