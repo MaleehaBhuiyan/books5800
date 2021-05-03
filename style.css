@@ -121,3 +121,19 @@ nav {
     z-index: 1;
 }
 
+<<<<<<< HEAD
+=======
+footer {
+  clear: left;
+}
+
+#top-books {
+  clear: left;
+}
+.bargain {
+  clear: left;
+}
+.latest {
+  clear: left;
+}
+>>>>>>> 964f102100229a114e6756c79e963c8d91972d36
