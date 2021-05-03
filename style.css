@@ -113,3 +113,11 @@ img {vertical-align: middle;} */
   }
 
 
+
+
+nav {
+    position:fixed;
+    top:0px;
+    z-index: 1;
+}
+
