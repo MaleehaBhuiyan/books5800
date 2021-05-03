@@ -112,3 +112,17 @@ nav {
     top:0px;
     z-index: 1;
 }
+
+footer {
+  clear: left;
+}
+
+#top-books {
+  clear: left;
+}
+.bargain {
+  clear: left;
+}
+.latest {
+  clear: left;
+}
