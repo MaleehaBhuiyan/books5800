@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
@@ -10,7 +11,8 @@
 
 
   <!-- Bootstrap Css Link  -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Materialize CSS Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -26,61 +28,163 @@
   <!-- EXTRA PUSH -->
   <nav>
     <div class="nav-wrapper">
-      <a href="../index.html" class="brand-logo">Logo</a>
+      <a href="../index.html" class="pl-4 brand-logo">Logo</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li>    
+        <li>
           <div class="center row">
-             <div class="col s12 " >
-               <div class="row" id="topbarsearch">
-                 <div class="input-field col s6 s12 white-text">
-                   <i class="white-text material-icons prefix">search</i>
-                   <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete white-text" >
-                   </div>
-                 </div>
-               </div>
-             </div>          
-         </li> 
+            <div class="col s12 ">
+              <div class="row" id="topbarsearch">
+                <div class="input-field col s6 s12 white-text">
+                  <i class="white-text material-icons prefix">search</i>
+                  <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete white-text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
         <li><a href="book-listing.html"><i class="material-icons">book</i></a></li>
         <li><a href="account.html"><i class="material-icons">account_circle</i></a></li>
         <li><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
-        </li> 
+        </li>
       </ul>
     </div>
   </nav>
 </header>
+
 <body>
-  <h1>ACCOUNT PAGE</h1>
-    
-<!-- Footer with links and copyright -->
-<footer class="page-footer">
+  <h1 class="text-uppercase pl-4">User profile page</h1>
   <div class="container">
     <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">About us</h5>
-        <p class="grey-text text-lighten-4">Books 5800 is an online bookstore that aims to provide customers with the experience of going to your local bookstore. Through our platform, customers won’t have to sacrifice convenience for their favorite local bookstores, or vice-versa, and in the process highlighting fresh new voices within the community we love.</p>
+      <!-- Account Info -->
+      <div class="col">
+        <h2 class="text-capitalize">Account Info</h2>
+        <form>
+          <div class="form-group row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="email@example.com">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword" placeholder="Change Password">
+            </div>
+          </div>
+        </form>
       </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Links</h5>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-          <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-        </ul>
+    </div>
+    <!-- Payment Profile -->
+    <div class="row">
+      <div class="col">
+        <h2 class="text-capitalize">Payment Profile</h2>
+        <form>
+          <div class="form-group row">
+            <label for="creditCardNum" class="col-sm-2 col-form-label">Credit Card Number</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputCreditCardNum" placeholder="Update Credit Card #">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="creditCardProvider" class="col-sm-2 col-form-label">Credit Card Provider</label>
+            <div class="col-sm-10">
+              <select class="custom-select">
+                <option selected>Change the credit card provider</option>
+                <option value="1">American Express</option>
+                <option value="2">Visa</option>
+                <option value="3">MasterCard</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPinNum" class="col-sm-2 col-form-label">Pin Number</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="creditCardPinNun" placeholder="Change Pin Number">
+            </div>
+          </div>
+        </form>
       </div>
-      <div class="col l2 offset-l0 s12">
-        <h3 class="white-text"> Logo </h5>
-        <p class="grey-text text-lighten-4">Placeholder for the logo</p>
+    </div>
+    <!-- Order History -->
+    <div class="row">
+      <!-- Account Info -->
+      <div class="col">
+        <h2 class="text-capitalize">Order History</h2>
+        <!-- Table for order history -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Total Price</th>
+              <th scope="col">Date Ordered</th>
+              <th scope="col">Book Names (List)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>$109.99</td>
+              <td>02/25/21</td>
+              <td><ol><li>Harry Potter Volumes 1-7 Special Edition Case</li></ol></td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>$49.99</td>
+              <td>02/26/21</td>
+              <td><ol><li>Cracking the Coding Interview</li></ol></td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>$19.99</td>
+              <td>02/30/21</td>
+              <td>
+                <ol>
+                  <li>Mars</li>
+                  <li>Digital Migration</li>
+                  <li>30-Second World History</li>
+                </ol>
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
   </div>
-  <div class="footer-copyright">
-    <div class="container">
-    © 2021 Copyright Text
-    </div>
-  </div>
-</footer>
 
-<script src="../js/index.js"></script>
+  <!-- Footer with links and copyright -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text text-uppercase">About us</h5>
+          <p class="grey-text text-lighten-4">Books 5800 is an online bookstore that aims to provide customers with the
+            experience of going to your local bookstore. Through our platform, customers won’t have to sacrifice
+            convenience for their favorite local bookstores, or vice-versa, and in the process highlighting fresh new
+            voices within the community we love.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text text-uppercase">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="/pages/book-listing.html">Book Listing</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Terms and Privacy</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col l2 offset-l0 s12">
+          <a href="/index.html"><img src="/images/books5800-logo.jpeg" height="200px" alt="Company Logo"></a>
+          <p class="grey-text text-lighten-4 text-capitalize pt-3">Buy your local books from us</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 Copyright Text
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/index.js"></script>
 </body>
+
 </html>
