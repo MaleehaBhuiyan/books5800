@@ -130,3 +130,32 @@ footer {
 .search-box {
   text-indent: 15px;
 }
+
+
+
+
+
+
+/*********************************************** BOOK LISTING CSS  *******************************************/
+
+
+/* MUST FIX CSS LATER  */
+#books-container{
+  border: 5px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+
+.bookCard{
+  height: 400px;
+  width: 200px;
+  border: 1px solid red;
+  /* flex: 0 0 25%; */
+
+}
+
+.bookCover1{
+  height: 200px;
+  width: 125px
+}
