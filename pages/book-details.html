@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
@@ -10,7 +11,8 @@
 
 
   <!-- Bootstrap Css Link  -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
   <!-- Materialize CSS Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -28,36 +30,67 @@
     <div class="nav-wrapper">
       <a href="../index.html" class="brand-logo">Logo</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li>    
+        <li>
           <div class="center row">
-             <div class="col s12 " >
-               <div class="row" id="topbarsearch">
-                 <div class="input-field col s6 s12 white-text">
-                   <i class="white-text material-icons prefix">search</i>
-                   <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete white-text" >
-                   </div>
-                 </div>
-               </div>
-             </div>          
-         </li> 
+            <div class="col s12 ">
+              <div class="row" id="topbarsearch">
+                <div class="input-field col s6 s12 white-text">
+                  <i class="white-text material-icons prefix">search</i>
+                  <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete white-text">
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
         <li><a href="book-listing.html"><i class="material-icons">book</i></a></li>
         <li><a href="account.html"><i class="material-icons">account_circle</i></a></li>
         <li><a href="cart.html"><i class="material-icons">shopping_cart</i></a></li>
-        </li> 
+        </li>
       </ul>
     </div>
   </nav>
 </header>
+
 <body>
-    <div class="bookpic">
-        <img src="../images/book1.png">
+  <div class="bookpic">
+    <img src="../images/book1.png">
+  </div>
+  <div class="bookinfo">
+    <h3>Title</h3>
+    <h3>Price</h3>
+    <h6>Author</h6>
+  </div>
+
+  <!-- Footer with links and copyright -->
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text text-uppercase">About us</h5>
+          <p class="grey-text text-lighten-4">Books 5800 is an online bookstore that aims to provide customers with the
+            experience of going to your local bookstore. Through our platform, customers won’t have to sacrifice
+            convenience for their favorite local bookstores, or vice-versa, and in the process highlighting fresh new
+            voices within the community we love.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text text-uppercase">Links</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="/pages/book-listing.html">Book Listing</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">About Us</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Terms and Privacy</a></li>
+            <li><a class="grey-text text-lighten-3" href="#!">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col l2 offset-l0 s12">
+          <a href="/index.html"><img src="/images/books5800-logo.jpeg" height="200px" alt="Company Logo"></a>
+          <p class="grey-text text-lighten-4 text-capitalize pt-3">Buy your local books from us</p>
+        </div>
+      </div>
     </div>
-    <div class="bookinfo">
-        <h3>Title</h3> <h3>Price</h3>
-        <h6>Author</h6>
-
-
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 Copyright Text
+      </div>
     </div>
-
-
+  </footer>
 </body>
