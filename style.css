@@ -240,3 +240,54 @@ p {
 #search{
   width: 1000px;
 }
+
+
+
+/*********************************************** Show Page CSS  *******************************************/
+
+#show-page-container{
+  position: relative;
+  left: 15%;
+}
+
+#show-page-container-top{
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp-child{
+  width: 50%;
+  float: left;
+  padding: 20px;
+}
+
+.sp-img{
+  width: 325px;
+  height: 500px;
+}
+
+.sp-button-component{
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+
+.sp-add{
+  background-color: #1565c0;
+  border-radius: 4px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+  color: white;
+}
+
+.sp-add:hover {
+  box-shadow: 0px 15px 20px rgba(96, 96, 96, 0.4);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+a:hover{
+  text-decoration: none;
+}
