@@ -24,13 +24,17 @@
 
   <link rel="stylesheet" href="style.css">
 
+
+  <!-- Moving Letters Link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
 </head>
 
 <body>
   <header>
     <!-- NAVBAR  -->
     <nav>
-      <div class="nav-wrapper">
+      <div class="nav-wrapper blue darken-3">
         <a href="/" class="brand-logo pl-4"><img src="./images/books5800-logo.png" alt="5800Books Logo"
             height="35"></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -54,215 +58,133 @@
       </div>
     </nav>
   </header>
-  <div class="slideshow-container">
+  <div class="jumbotron">
+    <h1 class="ml16">Welcome To Books 5800</h1>
+    <script>
+      var textWrapper = document.querySelector('.ml16');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-    <div class="mySlides">
-      <div class="numbertext">1 / 3</div>
-      <img class="slide"
-        src="https://images.pexels.com/photos/4861363/pexels-photo-4861363.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-        style="width:100%"
-        alt="Slide # 1">
-      <div class="text">Caption Text</div>
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">2 / 3</div>
-      <img class="slide"
-        src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-        style="width:100%"
-        alt="Slide # 2">
-      <div class="text">Caption Two</div>
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 3</div>
-      <img class="slide"
-        src="https://images.unsplash.com/photo-1520699049698-acd2fccb8cc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60"
-        style="width:100%"
-        alt="Slide # 3">
-      <div class="text">Caption Three</div>
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  </div>
-  <br>
-
-  <div style="text-align:center">
-    <span class="dot" onclick="currentSlide(1)"></span>
-    <span class="dot" onclick="currentSlide(2)"></span>
-    <span class="dot" onclick="currentSlide(3)"></span>
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml16 .letter',
+    translateY: [-100,0],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: (el, i) => 30 * i
+  }).add({
+    targets: '.ml16',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+    </script>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
+    </br>
   </div>
 
-  <h1>HOMEPAGE</h1>
+  <div id="home-icons">
+    <div class="home-icon">
+      <i class="medium material-icons">photo_filter</i> 
+      <p>New Releases</p> 
+    </div>
+
+    <div class="home-icon">
+      <i class="medium material-icons">attach_money</i>  
+      <p>Great Prices</p> 
+    </div>
+
+    <div class="home-icon">
+      <i class="medium material-icons">cake</i>  
+      <p>Special Sales</p> 
+    </div>
+
+    <div class="home-icon">
+      <i class="medium material-icons">call_made</i> 
+      <p>Fast Delivery</p>  
+    </div>
+
+    <div class="home-icon">
+      <i class="medium material-icons">local_play</i>  
+      <p>Best Sellers</p> 
+    </div>
+
+  </div>
+
+</br>
+
+
+  <div id="reader-recomend">
+    <h1 style="text-align: center;">Reader's Recommend</h1>
+
+    <div id="r-r-books">
+      <div class="r-r-book">
+        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781250027436_p0_v6_s550x406.jpg" />
+        <h6>Shadow and Bone</h6>
+        <p>Leigh Bardugo</p>
+        <h6>★★★★★</h6>
+      </div>
+  
+      <div class="r-r-book">
+        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781250076960_p0_v7_s550x406.jpg" />
+        <h6>Six of Crows</h6>
+        <p>Leigh Bardugo</p>
+        <h6>★★★★★</h6>
+      </div>
+  
+      <div class="r-r-book">
+        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9780316201643_p0_v4_s550x406.jpg" />
+        <h6>S.</h6>
+        <p>J. J. Abrams</p>
+        <h6>★★★★★</h6>
+      </div>
+  
+      <div class="r-r-book">
+        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9780525656975_p0_v96_s550x406.jpg" />
+        <h6>Great Circle</h6>
+        <p>Maggie Shipstead</p>
+        <h6>★★★★★</h6>
+      </div>
+  
+      <div class="r-r-book">
+        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9780062795236_p0_v1_s550x406.jpg" />
+        <h6>What If It's Us</h6>
+        <p>Becky Albertalli</p>
+        <h6>★★★★★</h6>
+      </div>
+    </div>
+
+
+  </div>
+
+  </br>
 
 
   <!-- Mission Statement  -->
-  <div id="about-us">
-    <p>
+  <!-- <div id="about-us">
+    <h2 class="about-us-child">About Us</h2>
+    <div class="about-us-child">
       Books 5800 is an online bookstore that aims to provide customers with the experience of going to your local
       bookstore. Through our platform, customers won’t have to sacrifice convenience for their favorite local
       bookstores, or vice-versa, and in the process highlighting fresh new voices within the community we love.
-  </div>
-
-
-  <!-- Cards-->
-  <div class="topbooks">
-    <h2>Top Books</h2>
-    <div class="card" id="f1" style="width: 18rem;">
-      <img src="images/book1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-      </div>
     </div>
-    <div class="card" id="f2" style="width: 18rem;">
-      <img src="images/book2.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-      </div>
-    </div>
-    <div class="card" id="f3" style="width: 18rem;">
-      <img src="images/book3.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-      </div>
-    </div>
-    <div class="card" id="f4" style="width: 18rem;">
-      <img src="images/book1.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-      </div>
-    </div>
-    <div class="card" id="f5" style="width: 18rem;">
-      <img src="images/book2.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-          content.</p>
-      </div>
-    </div>
-  </div>  
-
-    <div class="bargain">
-      <h2>Bargain</h2>
-      <div class="card" id="f1" style="width: 18rem;">
-        <img src="images/book1.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        </div>
-      </div>
-      <div class="card" id="f2" style="width: 18rem;">
-        <img src="images/book2.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        </div>
-      </div>
-      <div class="card" id="f3" style="width: 18rem;">
-        <img src="images/book3.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        </div>
-      </div>
-      <div class="card" id="f4" style="width: 18rem;">
-        <img src="images/book1.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        </div>
-      </div>
-      <div class="card" id="f5" style="width: 18rem;">
-        <img src="images/book2.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-            content.</p>
-        </div>
-      </div>
-    </div>
-
-      <div class="latest">
-        <h2>Latest Releases</h2>
-        <div class="card" id="f1" style="width: 18rem;">
-          <img src="images/book1.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-        <div class="card" id="f2" style="width: 18rem;">
-          <img src="images/book2.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-        <div class="card" id="f3" style="width: 18rem;">
-          <img src="images/book3.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-        <div class="card" id="f4" style="width: 18rem;">
-          <img src="images/book1.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-        <div class="card" id="f5" style="width: 18rem;">
-          <img src="images/book2.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-          </div>
-        </div>
-      </div>
-
-
-
-        <script>
-          var slideIndex = 1;
-          showSlides(slideIndex);
-
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-
-          function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-          }
-        </script>
-
-        <!-- Top Books  -->
-        <!--<div id="top-books">
-    <h3>Reader's Reccomend</h3>
   </div> -->
 
+
+
+
         <!-- Footer with links and copyright -->
-        <footer class="page-footer">
+        <footer class="page-footer blue darken-3">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
