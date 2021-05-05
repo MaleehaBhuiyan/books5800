@@ -58,7 +58,8 @@
       </div>
     </nav>
   </header>
-  <div class="jumbotron">
+  
+  <div class="jumbotron main-jumbotron">
     <h1 class="ml16">Welcome To Books 5800</h1>
     <script>
       var textWrapper = document.querySelector('.ml16');
@@ -163,24 +164,128 @@ anime.timeline({loop: true})
         <h6>★★★★★</h6>
       </div>
     </div>
-
-
   </div>
 
-  </br>
+
+  <div class="jumbotron jumbotron-2">
+    <h1 class="ml9 jumbotron-2-text">
+      <span class="text-wrapper">
+        <span class="letters">Embark On a New Adventure</span>
+      </span>
+    </h1>
+
+    <script>
+      var textWrapper = document.querySelector('.ml9 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml9 .letter',
+    scale: [0, 1],
+    duration: 1500,
+    elasticity: 600,
+    delay: (el, i) => 45 * (i+1)
+  }).add({
+    targets: '.ml9',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+    </script>
+    
+  </div>
 
 
-  <!-- Mission Statement  -->
-  <!-- <div id="about-us">
-    <h2 class="about-us-child">About Us</h2>
-    <div class="about-us-child">
-      Books 5800 is an online bookstore that aims to provide customers with the experience of going to your local
-      bookstore. Through our platform, customers won’t have to sacrifice convenience for their favorite local
-      bookstores, or vice-versa, and in the process highlighting fresh new voices within the community we love.
+  <div id="reader-recomend">
+    <h1 style="text-align: center;">Bargain Prices</h1>
+
+    <div id="r-r-books">
+      <div class="r-r-book">
+        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9780594871910_p0_v1_s550x406.jpg" />
+        <h6>Presence</h6>
+        <p style="color:red;text-decoration:line-through">16.99</p>
+        <h6>$3.00</h6>
+      </div>
+  
+      <div class="r-r-book">
+        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781911517719_p0_v3_s550x406.jpg" />
+        <h6>Little Acts of Kindness</h6>
+        <p style="color:red;text-decoration:line-through">$7.00</p>
+        <h6>$4.00</h6>
+      </div>
+  
+      <div class="r-r-book">
+        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781645880639_p0_v1_s550x406.jpg" />
+        <h6>Duck Tales Colortivity</h6>
+        <p style="color:red;text-decoration:line-through">$6.00</p>
+        <h6>$3.00</h6>
+      </div>
+  
+      <div class="r-r-book">
+        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781787833258_p0_v1_s550x406.jpg" />
+        <h6>Little Book of Mindfulness</h6>
+        <p style="color:red;text-decoration:line-through">$8.00</p>
+        <h6>$4.00</h6>
+      </div>
+  
+      <div class="r-r-book">
+        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781426221224_p0_v1_s550x406.jpg" />
+        <h6>The Greeks</h6>
+        <p style="color:red;text-decoration:line-through">$15.00</p>
+        <h6>$7.00</h6>
+      </div>
     </div>
+  </div>
+
+
+  <!-- <div class="jumbotron jumbotron-1">
+    
   </div> -->
 
 
+  <div class="jumbotron jumbotron-3">
+    <h1 class="ml14">
+      <span class="text-wrapper">
+        <span class="letters">Travel to Outer Space From Home</span>
+        <span class="line"></span>
+      </span>
+    </h1>
+
+    <script>
+      var textWrapper = document.querySelector('.ml14 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml14 .line',
+    scaleX: [0,1],
+    opacity: [0.5,1],
+    easing: "easeInOutExpo",
+    duration: 900
+  }).add({
+    targets: '.ml14 .letter',
+    opacity: [0,1],
+    translateX: [40,0],
+    translateZ: 0,
+    scaleX: [0.3, 1],
+    easing: "easeOutExpo",
+    duration: 800,
+    offset: '-=600',
+    delay: (el, i) => 150 + 25 * i
+  }).add({
+    targets: '.ml14',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+    </script>
+  </div>
+
+
+
+  </br>
 
 
         <!-- Footer with links and copyright -->
