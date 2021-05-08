@@ -1,4 +1,13 @@
-/* INDEX PAGE CSS */
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/***************** FOOTER CSS  *******************/
 
 /***************** LANDING PAGE CSS  *******************/
 
@@ -255,6 +264,16 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+#show-page-container-bottom{
+  clear: both;
+  position: relative;
+  left: 255px;
+  width: 1000px;
+  padding: 20px;
+}
+
+
 
 .sp-child{
   width: 50%;
