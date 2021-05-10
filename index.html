@@ -61,6 +61,9 @@
   
   <div class="jumbotron main-jumbotron">
     <h1 class="ml16">Welcome To Books 5800</h1>
+    <a href="./pages/book-listing.html">
+      <button id="shop-now">Shop Now</button>
+    </a>
     <script>
       var textWrapper = document.querySelector('.ml16');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
@@ -127,42 +130,54 @@ anime.timeline({loop: true})
 
   <div id="reader-recomend">
     <h1 style="text-align: center;">Reader's Recommend</h1>
+    
 
     <div id="r-r-books">
-      <div class="r-r-book">
-        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781250027436_p0_v6_s550x406.jpg" />
-        <h6>Shadow and Bone</h6>
-        <p>Leigh Bardugo</p>
-        <h6>★★★★★</h6>
-      </div>
-  
-      <div class="r-r-book">
-        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781250076960_p0_v7_s550x406.jpg" />
-        <h6>Six of Crows</h6>
-        <p>Leigh Bardugo</p>
-        <h6>★★★★★</h6>
-      </div>
-  
-      <div class="r-r-book">
-        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9780316201643_p0_v4_s550x406.jpg" />
-        <h6>S.</h6>
-        <p>J. J. Abrams</p>
-        <h6>★★★★★</h6>
-      </div>
-  
-      <div class="r-r-book">
-        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9780525656975_p0_v96_s550x406.jpg" />
-        <h6>Great Circle</h6>
-        <p>Maggie Shipstead</p>
-        <h6>★★★★★</h6>
-      </div>
-  
-      <div class="r-r-book">
-        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9780062795236_p0_v1_s550x406.jpg" />
-        <h6>What If It's Us</h6>
-        <p>Becky Albertalli</p>
-        <h6>★★★★★</h6>
-      </div>
+
+      <a href="./bookDetails/34.html">
+        <div class="r-r-book">
+          <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781250027436_p0_v6_s550x406.jpg" />
+          <h6>Shadow and Bone</h6>
+          <p>Leigh Bardugo</p>
+          <h6>★★★★★</h6>
+        </div>
+      </a>
+
+      <a href="./bookDetails/101.html">
+        <div class="r-r-book">
+          <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781250076960_p0_v7_s550x406.jpg" />
+          <h6>Six of Crows</h6>
+          <p>Leigh Bardugo</p>
+          <h6>★★★★★</h6>
+        </div>
+      </a>
+
+      <a href="./bookDetails/102.html">
+        <div class="r-r-book">
+          <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9780316201643_p0_v4_s550x406.jpg" />
+          <h6>S.</h6>
+          <p>J. J. Abrams</p>
+          <h6>★★★★★</h6>
+        </div>
+      </a>
+
+      <a href="./bookDetails/103.html">
+        <div class="r-r-book">
+          <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9780525656975_p0_v96_s550x406.jpg" />
+          <h6>Great Circle</h6>
+          <p>Maggie Shipstead</p>
+          <h6>★★★★★</h6>
+        </div>
+      </a>
+
+      <a href="./bookDetails/104.html">
+        <div class="r-r-book">
+          <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9780062795236_p0_v1_s550x406.jpg" />
+          <h6>What If It's Us</h6>
+          <p>Becky Albertalli</p>
+          <h6>★★★★★</h6>
+        </div>
+      </a>
     </div>
   </div>
 
@@ -201,40 +216,50 @@ anime.timeline({loop: true})
     <h1 style="text-align: center;">Bargain Prices</h1>
 
     <div id="r-r-books">
-      <div class="r-r-book">
-        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9780594871910_p0_v1_s550x406.jpg" />
-        <h6>Presence</h6>
-        <p style="color:red;text-decoration:line-through">16.99</p>
-        <h6>$3.00</h6>
-      </div>
-  
-      <div class="r-r-book">
-        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781911517719_p0_v3_s550x406.jpg" />
-        <h6>Little Acts of Kindness</h6>
-        <p style="color:red;text-decoration:line-through">$7.00</p>
-        <h6>$4.00</h6>
-      </div>
-  
-      <div class="r-r-book">
-        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781645880639_p0_v1_s550x406.jpg" />
-        <h6>Duck Tales Colortivity</h6>
-        <p style="color:red;text-decoration:line-through">$6.00</p>
-        <h6>$3.00</h6>
-      </div>
-  
-      <div class="r-r-book">
-        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781787833258_p0_v1_s550x406.jpg" />
-        <h6>Little Book of Mindfulness</h6>
-        <p style="color:red;text-decoration:line-through">$8.00</p>
-        <h6>$4.00</h6>
-      </div>
-  
-      <div class="r-r-book">
-        <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781426221224_p0_v1_s550x406.jpg" />
-        <h6>The Greeks</h6>
-        <p style="color:red;text-decoration:line-through">$15.00</p>
-        <h6>$7.00</h6>
-      </div>
+      <a href="./bookDetails/105.html">
+        <div class="r-r-book">
+          <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9780594871910_p0_v1_s550x406.jpg" />
+          <h6>Presence</h6>
+          <p style="color:red;text-decoration:line-through">16.99</p>
+          <h6>$3.00</h6>
+        </div>
+      </a>
+
+      <a href="./bookDetails/106.html">
+        <div class="r-r-book">
+          <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781911517719_p0_v3_s550x406.jpg" />
+          <h6>Little Acts of Kindness</h6>
+          <p style="color:red;text-decoration:line-through">$7.00</p>
+          <h6>$4.00</h6>
+        </div>
+      </a>
+
+      <a href="./bookDetails/107.html">
+        <div class="r-r-book">
+          <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781645880639_p0_v1_s550x406.jpg" />
+          <h6>Duck Tales Colortivity</h6>
+          <p style="color:red;text-decoration:line-through">$6.00</p>
+          <h6>$3.00</h6>
+        </div>
+      </a>
+
+      <a href="./bookDetails/108.html">
+        <div class="r-r-book">
+          <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781787833258_p0_v1_s550x406.jpg" />
+          <h6>Little Book of Mindfulness</h6>
+          <p style="color:red;text-decoration:line-through">$8.00</p>
+          <h6>$4.00</h6>
+        </div>
+      </a>
+
+      <a href="./bookDetails/109.html">
+        <div class="r-r-book">
+          <img class="r-r-cover" src="https://prodimage.images-bn.com/pimages/9781426221224_p0_v1_s550x406.jpg" />
+          <h6>The Greeks</h6>
+          <p style="color:red;text-decoration:line-through">$15.00</p>
+          <h6>$7.00</h6>
+        </div> 
+      </a>
     </div>
   </div>
 
